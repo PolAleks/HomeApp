@@ -14,10 +14,12 @@ namespace HomeApp
             //MainPage = new MainPage();
             //MainPage = new LoadingPage();
             //MainPage = new SpanPage();
-            MainPage = new LoginPage();
+            //MainPage = new LoginPage();
             //MainPage = new RegisterPage();
-
             //MainPage = new RoomsPage();
+            //MainPage = new DevicesPage();
+
+            MainPage = new ClimatePage();
         }
 
         protected override void OnStart()
