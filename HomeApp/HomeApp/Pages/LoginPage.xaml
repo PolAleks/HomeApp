@@ -16,5 +16,9 @@
                 Text="{x:Static local:LoginPage.BUTTON_TEXT}" 
                 Clicked="Login_Click"
                 CornerRadius="{ext:ButtonView ButtonStyle=SemiRound}"/>
+        <Label x:Name="infoMessage"
+               FontSize="Small"
+               TextColor="{ext:Rgb Red=255,Green=0,Blue=0}"
+               HorizontalTextAlignment="Center"/>
     </StackLayout>
 </ContentPage>
