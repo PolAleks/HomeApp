@@ -9,10 +9,8 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <BoxView Color="LightBlue" Grid.Column="0" Grid.Row="0" />
         <BoxView Color="Blue" Grid.Column="1" Grid.Row="0" />
-        <BoxView Color="DarkBlue" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
     </Grid>
 </ContentPage>
