@@ -59,25 +59,24 @@ namespace HomeApp.Pages
         /// </summary>
         public void PopulateGrid(Grid grid)
         {
-            // Добавление элементов по определенным позициям
-            grid.Children.Add(new BoxView { Color = Color.FromRgb(250, 253, 255) }, 0 /* Позиция слева */, 0 /* Позиция сверху */);
+            var leftMergeColumn = new BoxView { Color = Color.FromRgb(133, 207, 255) };
 
-            // Сохраняем элемент перед добавлением, чтобы потом модифицировать
-            var mergedRow = new BoxView { Color = Color.FromRgb(196, 232, 255) };
-            // Добавляем в Grid
-            grid.Children.Add(mergedRow, 0, 1);
-            // Устанавливаем свойство ColumnSpan, чтобы расширить элемент на 3 позиции
-            Grid.SetColumnSpan(mergedRow, 3);
+            grid.Children.Add(leftMergeColumn, 0, 0);
 
-            grid.Children.Add(new BoxView { Color = Color.FromRgb(133, 207, 255) }, 0, 2);
+            Grid.SetRowSpan(leftMergeColumn, 3);
 
-            grid.Children.Add(new BoxView { Color = Color.FromRgb(87, 189, 255) }, 1, 0);
-            // grid.Children.Add(new BoxView { Color = Color.FromRgb(43, 172, 255) }, 1, 1);
+            grid.Children.Add(new BoxView { Color = Color.FromRgb(250, 253, 255) }, 1, 0);
+
+            grid.Children.Add(new BoxView { Color = Color.FromRgb(43, 172, 255) }, 1, 1);
+
             grid.Children.Add(new BoxView { Color = Color.FromRgb(23, 164, 255) }, 1, 2);
 
-            grid.Children.Add(new BoxView { Color = Color.FromRgb(0, 121, 199) }, 2, 0);
-            // grid.Children.Add(new BoxView { Color = Color.FromRgb(0, 76, 199) }, 2, 1);
-            grid.Children.Add(new BoxView { Color = Color.FromRgb(0, 76, 199) }, 2, 2);
+            var rightMergeColumn = new BoxView { Color = Color.FromRgb(133, 207, 255) };
+            
+            grid.Children.Add(rightMergeColumn, 2, 0);
+
+            Grid.SetRowSpan(rightMergeColumn , 3);
+            
         }
     }
 }
