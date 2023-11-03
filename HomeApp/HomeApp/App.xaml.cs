@@ -20,7 +20,7 @@ namespace HomeApp
             //MainPage = new DevicesPage();
             //MainPage = new ClimatePage();
 
-            MainPage = new GridPage();
+            MainPage = new MergeGridPage();
         }
 
         protected override void OnStart()
